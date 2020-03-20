@@ -41,14 +41,14 @@ export class AppComponent {
    }
 
 
-
+// borrar datos
    delete() {
 
     if (confirm('Quieres eliminarlo?')) {
       this.ArregloEmployee = this.ArregloEmployee.filter(x => x !== this.selectedEmployee);
       this.selectedEmployee = new Employee();
     }
-
+    
   }
 
 
